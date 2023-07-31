@@ -1,38 +1,143 @@
-.App {
+/* Global styles */
+:root {
+  --tomato: #ef6351ff;
+  --salmon: #f38375ff;
+  --melon: #f7a399ff;
+  --melon-2: #fbc3bcff;
+  --misty-rose: #ffe3e0ff;
+  --turquoise: #5dd9c1ff;
+--aquamarine: #acfcd9ff;
+--african-violet: #b084ccff;
+--ultra-violet: #665687ff;
+--russian-violet: #190933ff;
+--burnt-sienna: #de6b48ff;
+--buff: #e5b181ff;
+--melon: #f4b9b2ff;
+--tea-green: #daedbdff;
+--sky-blue: #7dbbc3ff;
+--black: #080705ff;
+--licorice: #362023ff;
+--tyrian-purple: #700548ff;
+--glaucous: #7272abff;
+--vista-blue: #7899d4ff;
+--smoky-black: #141204ff;
+--drab-dark-brown: #262a10ff;
+--drab-dark-brown-2: #54442bff;
+--brown-sugar: #a9714bff;
+--persian-orange: #e8985eff;
+--charcoal: #394053ff;
+--davys-gray: #4e4a59ff;
+--wenge: #6e6362ff;
+--reseda-green: #839073ff;
+--asparagus: #7cae7aff;
+};
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #b084ccff;
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-title {
+  max-width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-tabs {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: #6e6362ff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-link.active {
+  background-color:#6e6362ff;
+  color: #007bff;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Main content styles */
+.App-content {
+  padding: 20px;
+}
+
+h1 {
+  color: #007bff;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Footer styles */
+.App-footer {
+  background-color: #b084ccff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-tabs {
+    margin-top: 10px;
   }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+}
+
+footer {
+  background-color: #4e4a59ff;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+
+body {
+  /* Specify the background properties here */
+  background-color: #f0f0f0; /* Example background color */
+  background-image: url('/public/images/stars-2643089_1280\ \(1\).png'); /* Example background image */
+  /* background-size: cover; /* Adjust as needed to cover the whole screen */
+
+  background-attachment: fixed; 
 }
