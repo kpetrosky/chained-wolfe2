@@ -1,0 +1,28 @@
+/* VerticalNavBar.css */
+.vertical-nav {
+    background-color: #7e7b7b;
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .vertical-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .vertical-nav li {
+    margin: 10px;
+  }
+  
+  .vertical-nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  

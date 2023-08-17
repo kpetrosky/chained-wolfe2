@@ -1,0 +1,40 @@
+/* Header.css */
+
+.header-container {
+  background-color: #2D0320;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-container h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-nav {
+  margin-top: 10px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 10px;
+  }
+  .header-container h1 {
+    font-size: 20px;
+  }
+  .header-nav {
+    margin-top: 5px;
+  }
+  .header-nav a {
+    font-size: 14px;
+  }
+}

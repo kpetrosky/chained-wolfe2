@@ -1,37 +1,13 @@
 import React from 'react';
+import './Header.css'; // Import the CSS file for styling
 
-const Header = ({ currentPage, handlePageChange }) => {
+const Header = () => {
   return (
-    <header className="App-header">
-      <div className="header-container">
-        <ul className="nav nav-tabs">
-          <li className="nav-item">
-            <button
-              onClick={() => handlePageChange('announcements')}
-              className={currentPage === 'announcements' ? 'nav-link active' : 'nav-link'}
-            >
-              🧡Announcements
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              onClick={() => handlePageChange('about')}
-              className={currentPage === 'about' ? 'nav-link active' : 'nav-link'}
-            >
-              🧐About
-            </button>
-          </li>
-          <li className="nav-item">
-            <button
-              onClick={() => handlePageChange('resources')}
-              className={currentPage === 'resources' ? 'nav-link active' : 'nav-link'}
-            >
-              🐶Resources
-            </button>
-          </li>
-          {/* Add more buttons for other pages */}
-        </ul>
-      </div>
+    <header className="header-container">
+      <h1>Chained Wolfe MetalCrafts</h1>
+      <nav>
+        {/* Add navigation links or other content here */}
+      </nav>
     </header>
   );
 };

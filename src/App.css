@@ -1,143 +1,97 @@
-/* Global styles */
-:root {
-  --tomato: #ef6351ff;
-  --salmon: #f38375ff;
-  --melon: #f7a399ff;
-  --melon-2: #fbc3bcff;
-  --misty-rose: #ffe3e0ff;
-  --turquoise: #5dd9c1ff;
---aquamarine: #acfcd9ff;
---african-violet: #b084ccff;
---ultra-violet: #665687ff;
---russian-violet: #190933ff;
---burnt-sienna: #de6b48ff;
---buff: #e5b181ff;
---melon: #f4b9b2ff;
---tea-green: #daedbdff;
---sky-blue: #7dbbc3ff;
---black: #080705ff;
---licorice: #362023ff;
---tyrian-purple: #700548ff;
---glaucous: #7272abff;
---vista-blue: #7899d4ff;
---smoky-black: #141204ff;
---drab-dark-brown: #262a10ff;
---drab-dark-brown-2: #54442bff;
---brown-sugar: #a9714bff;
---persian-orange: #e8985eff;
---charcoal: #394053ff;
---davys-gray: #4e4a59ff;
---wenge: #6e6362ff;
---reseda-green: #839073ff;
---asparagus: #7cae7aff;
-};
+/* App.css */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('./Components/images/pexels-veeterzy-38136.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ 
 }
-
-/* Header styles */
-.App-header {
-  background-color: #b084ccff;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.App-title {
-  max-width: 100%;
-  height: auto;
-}
-
-.header-container {
-  display: flex;
-  justify-content: center;
-}
-
-.nav-tabs {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.nav-item {
-  margin: 0 10px;
-}
-
-.nav-link {
-  color: #6e6362ff;
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
-.nav-link.active {
-  background-color:#6e6362ff;
-  color: #007bff;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-/* Main content styles */
-.App-content {
-  padding: 20px;
-}
-
-h1 {
-  color: #007bff;
-}
-
-ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-/* Footer styles */
-.App-footer {
-  background-color: #b084ccff;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-/* Media query for responsive design */
-@media (max-width: 768px) {
-  .header-container {
+  
+  .container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    color: #ece7e7;
+    opacity: 0.9;
   }
-
-  .nav-tabs {
-    margin-top: 10px;
+  
+  .services-products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
-
-  .nav-item {
-    margin: 5px 0;
+  
+  .service-product-card {
+    border: 1px solid #ccc;
+    padding: 35px;
+    margin: 55px;
+    border-radius: 5px;
+    width: calc(40% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
   }
-}
-
-footer {
-  background-color: #4e4a59ff;
-  color: #fff;
-  padding: 25px;
-  text-align: center;
-}
-
-
-body {
-  /* Specify the background properties here */
-  background-color: #f0f0f0; /* Example background color */
-  background-image: url('/public/images/stars-2643089_1280\ \(1\).png'); /* Example background image */
-  /* background-size: cover; /* Adjust as needed to cover the whole screen */
-
-  background-attachment: fixed; 
-}
+  
+  .service-product-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .service-product-price {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  /* Gallery.css */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .gallery-image {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  /* Cart.css */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+    color: #ccc;
+  }
+  /* App.css or your custom CSS file */
+.cart-item-name {
+    color: rgb(206, 206, 233); /* Change to your desired color */
+  }
+  
