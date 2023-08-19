@@ -9,6 +9,7 @@ import Gallery from './Components/pages/Gallery';
 import ch1 from './Components/images/ch1.png';
 import ch2 from './Components/images/ch2.png';
 import ch3 from './Components/images/ch3.png';
+
 import Footer from './Components/Footer';
 import './App.css';
 
