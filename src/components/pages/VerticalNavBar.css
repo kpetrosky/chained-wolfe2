@@ -2,8 +2,8 @@
 /* VerticalNavBar.css */
 
 .vertical-nav {
-  background-color: #9750b3;
-  color: white;
+  background-color: #636674;
+    color: rgb(214, 203, 203);
   width: 250px;
   height: 100%;
   position: fixed;
