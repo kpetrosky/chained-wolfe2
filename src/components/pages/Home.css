@@ -9,6 +9,12 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.image-style {
+  width: 25; /* Adjust the width to your desired size */
+  height: 15; /* This will maintain the image's aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Remove any default inline spacing */
+}
 
 
 h1 {
@@ -59,3 +65,5 @@ p {
     color: #555;
   }
    
+ 
+  
