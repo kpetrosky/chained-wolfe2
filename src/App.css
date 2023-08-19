@@ -9,10 +9,11 @@ body, h1, h2, h3, p {
   /* Global styles */
   body {
     font-family: Arial, sans-serif;
-    background-image: url('./Components/images/pexels-veeterzy-38136.jpg');
+    background-image: url('./Components/images/marble2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+   
  
 }
   
@@ -54,6 +55,13 @@ body, h1, h2, h3, p {
     font-size: 14px;
     color: #555;
   }
+  
+.greyed-out {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+
   /* Gallery.css */
 .gallery {
     display: flex;

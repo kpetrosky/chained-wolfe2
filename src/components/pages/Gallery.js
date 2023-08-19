@@ -10,7 +10,7 @@ const Gallery = ({ images }) => {
           <div
             className="gallery-image"
             style={{ backgroundImage: `url(${image})` }}
-            aria-label={`Gallery Image ${index + 1}`}
+            aria-label={`Image ${index + 1}`}
           ></div>
         </Link>
       ))}
@@ -19,6 +19,3 @@ const Gallery = ({ images }) => {
 };
 
 export default Gallery;
-
-
-

@@ -1,25 +1,36 @@
 /* Header.css */
 
+/* Header.css */
+
+/* Header.css */
+
 .header-container {
-  background-color: #2D0320;
+  background-color: #611d4b;
   color: white;
-  padding: 20px;
+  padding: 2px;
   text-align: center;
+  width: 100%; /* Make the container stretch across the screen */
+  position: fixed; /* Fixed position to keep it at the top */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Set a lower z-index value */
 }
+
+
 
 .header-container h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 48px;
 }
 
 .header-nav {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .header-nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 0px;
   font-size: 16px;
 }
 

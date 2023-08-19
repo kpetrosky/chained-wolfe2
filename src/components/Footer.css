@@ -1,0 +1,25 @@
+/* Footer.css */
+
+/* Make the footer stick to the bottom */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Footer background color */
+    color: white; /* Font color */
+    text-align: center;
+    padding: 10px 0; /* Add padding to top and bottom */
+  }
+  
+  /* Style for the navigation links */
+  .footer-nav a {
+    text-decoration: none;
+    color: white; /* Font color */
+    margin: 0 10px;
+  }
+  
+  .footer-nav a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  

@@ -6,6 +6,10 @@ import Cart from './Components/pages/Cart';
 import VerticalNavBar from './Components/pages/VerticalNavBar';
 import Header from './Components/Header';
 import Gallery from './Components/pages/Gallery'; // Import the Gallery component
+import ch1 from './Components/images/ch1.png'; // Import your image URLs
+import ch2 from './Components/images/ch2.png';
+import ch3 from './Components/images/ch3.png';
+import Footer from './Components/Footer'; // Import the Footer component
 import './App.css';
 
 function App() {
@@ -35,18 +39,19 @@ function App() {
           {/* Add a route for the Gallery */}
           <Route
             path="/gallery"
-            element={
+            element={ 
               <Gallery
                 images={[
-                  '/images/ch1.jpg',
-                  '/images/ch2.jpg',
-                  '/images/ch3.jpg',
+                  ch1, // Use the imported image URLs
+                  ch2,
+                  ch3,
                   // ...more image URLs
                 ]}
               />
             }
           />
         </Routes>
+        <Footer /> {/* Add the Footer component */}
       </div>
     </Router>
   );

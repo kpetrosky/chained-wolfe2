@@ -2,8 +2,8 @@
 /* Styling for the Home component */
 .home-container {
   text-align: center;
-  margin: 2rem;
-  padding: 2rem;
+  margin: 50rem;
+  padding: 50rem;
   background-color: #f0f0f0;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
