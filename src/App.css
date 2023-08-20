@@ -63,17 +63,7 @@ body, h1, h2, h3, p {
 }
 
   /* Gallery.css */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .gallery-image {
-    max-width: 100px;
-    height: auto;
-  }
-  
+
   /* Cart.css */
 .cart-container {
     display: flex;

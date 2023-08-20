@@ -1,8 +1,8 @@
 /* Styling for the Gallery component */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 
 .gallery-link {
@@ -10,9 +10,16 @@
 }
 
 .gallery-image {
-  height: 200px; /* Adjust as needed */
+  /* flex: 1 0 calc(33.33% - 20px); Adjust the width as needed */
+  height: 300px;
+  width: 300px; /* Corrected typo: "weight" to "width" */
   background-size: cover;
   background-position: center;
-  border: 1px solid #ccc;
+  padding: 18px; /* Add padding for the border */
+  margin-top: 50px;
+  border: 5px solid #ccc; /* Border around each picture */
+  border-radius: 5px; /* Rounded corners for the border */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
   cursor: pointer;
 }
+
